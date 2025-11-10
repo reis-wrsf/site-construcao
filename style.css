@@ -1,0 +1,106 @@
+/*
+  ESTILOS GERAIS
+*/
+body {
+    /* Cor de fundo suave */
+    background-color: #f7e6ff; /* Lilás bem clarinho */
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background-color: #ffffff;
+    /* Borda arredondada suave */
+    border-radius: 20px;
+    /* Sombra para dar profundidade */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px 60px;
+    max-width: 90%;
+    width: 600px;
+}
+
+/*
+  ESTILIZAÇÃO DO CONTEÚDO
+*/
+.main-title {
+    /* Fonte mais chamativa para o título principal */
+    font-family: 'Comfortaa', cursive;
+    /* Tamanho de fonte bem grande */
+    font-size: 3.5em; /* 3 a 4 vezes o tamanho normal */
+    color: #8a2be2; /* Azul violeta vibrante */
+    margin-bottom: 10px;
+    /* Efeito de texto sutil */
+    text-shadow: 2px 2px 4px rgba(138, 43, 226, 0.2);
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: #5a00a0; /* Roxo escuro */
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.subtitle strong {
+    /* Destaca a data */
+    color: #ff69b4; /* Rosa choque */
+    font-size: 1.2em;
+}
+
+.message {
+    font-size: 1.1em;
+    color: #666;
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px dashed #cccccc;
+    font-style: italic;
+}
+
+/*
+  DESENHO/GRÁFICO DE GATO
+*/
+.cat-graphic {
+    font-size: 5em; /* Emoji/Desenho bem grande */
+    line-height: 1;
+    margin-top: 30px;
+    /* Pequena animação de "ronronar" (opcional) */
+    animation: bounce 2s infinite ease-in-out;
+}
+
+/* Animação */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/*
+  RESPONSIVIDADE (para telas menores, como celulares)
+*/
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .main-title {
+        font-size: 2.5em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+
+    .cat-graphic {
+        font-size: 4em;
+    }
+}
